@@ -42,7 +42,7 @@ def parse_files(files):
 	findings = {}
 	final_findings = {}
 	for x in files:
-		file = open(x, 'r')
+		file = open(x, 'r', errors='replace')
 		lst = []
 		findings["{}".format(file.name)] = lst
 		lines = file.readlines()
