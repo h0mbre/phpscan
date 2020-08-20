@@ -1,5 +1,15 @@
 ## phpscan
 A hacky python3 script to search for php files with traditionally vulnerable functions. 
+Currently looks for: 
++ system
++ shell_exec
++ exec
++ passthru
++ popen
++ proc_open
++ pcntl_exec
++ eval
++ assert
 
 ## usage
 To just search the current working directory:
